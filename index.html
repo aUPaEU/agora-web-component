@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Agora Web Component Health Check</title>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script type="module" src="index.js"></script>
+    <script>
+        const agora = document.createElement('script')
+        agora.src = 'https://cdn.jsdelivr.net/gh/KinoGlazPrusia/agora-component@v1.0.0/dist/agora-bundle.js'
+        document.head.append(agora)
+    </script>
+
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <nav class="navbar">
+        <ul class="menu">
+            <li 
+                class="selected"
+                id="unite-courses" 
+                data-domain="https://agora.unite-university.eu/" 
+                data-url="/student-catalogue/course">
+                Courses
+            </li>
+            <li 
+                id="unite-mooc" 
+                data-domain="https://agora.unite-university.eu/"
+                data-url="/student-catalogue/mooc">
+                MOOC
+            </li>
+            <li 
+                id="unite-joint-programmes" 
+                data-domain="https://agora.unite-university.eu/"
+                data-url="/student-catalogue/jp">
+                Joint Programmes
+            </li>
+            <li 
+                id="unite-doctoral-school-offerings" 
+                data-domain="https://uds-course-offering.unite-university.eu/"
+                data-url="/student-catalogue/uds">
+                Doctoral School Offerings
+            </li>
+            <li 
+                id="unite-extra-curricular-activities" 
+                data-domain="https://agora.unite-university.eu/"
+                data-url="/student-catalogue/extra-act">
+                Extra-Curricular Activities
+            </li>
+            <li 
+                id="unite-staff"
+                data-domain="https://facultyandstaff.unite-university.eu"
+                data-url="/courses-catalog-no-menu">
+                Staff
+            </li>
+        </ul>
+    </nav>
+    <!-- Agora Component -->
+    <agora-component 
+        class="agora" 
+        domain="https://agora.unite-university.eu/" 
+        url="/student-catalogue/course" 
+        auto-resize>
+    </agora-component>
+</body>
+</html>

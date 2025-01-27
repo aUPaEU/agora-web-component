@@ -1,0 +1,62 @@
+:root {
+    font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body {
+    margin: 0;
+}
+
+agora-component {
+    display: block;
+}
+
+.menu {
+    list-style: none;
+
+    margin: 0;
+    margin-bottom: 1rem;
+    padding: 0;
+    box-sizing: border-box;
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.menu li {
+    flex: 1;
+
+    cursor: pointer;
+    user-select: none;
+
+    padding: 1rem;
+    box-sizing: border-box;
+
+    display: grid;
+    place-content: center;
+
+    border-bottom: 2px solid rgba(0, 0, 0, 0);
+
+    font-size: 12px;
+
+    transition: 300ms;
+}
+
+.menu li:hover {
+    border-bottom: 2px solid rgba(0, 0, 0, 0.2);
+}
+
+.menu li:active {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.menu li:focus {
+    outline: none;
+}
+
+.selected {
+    color: rgb(0, 97, 224);
+    border-bottom: 2px solid rgba(0, 97, 224, 0.5) !important;
+}
